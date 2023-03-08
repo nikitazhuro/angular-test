@@ -1,0 +1,30 @@
+.userList:last-child {
+  margin-bottom: 0;
+}
+
+.filterInputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filterInputs input{
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid teal;
+  margin-bottom: 0.5rem;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px dashed teal;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+      transform:rotate(360deg); 
+  } 
+}

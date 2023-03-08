@@ -1,0 +1,37 @@
+.userBlock {
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: teal;
+  font-size: 24px;
+}
+
+.companyBtn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid teal;
+  color: teal;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.companyBtn:hover {
+  background-color: teal;
+  color: white;
+}
+
+.companyInfo {
+  margin-top: 0.75rem;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}

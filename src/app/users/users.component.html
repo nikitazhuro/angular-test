@@ -1,0 +1,18 @@
+<div class="userList">
+  <div *ngIf="usersFetching" class="loader"></div>
+
+  <div *ngIf="users$ | async as users">
+    <div
+      *ngIf="users | userFilterByTitle : titleSearch as filteredByTitleUsers"
+    >
+      <div class="filterInputs">
+        <input placeholder="Search by title" [(ngModel)]="titleSearch" >
+        <input placeholder="Search by id" [(ngModel)]="idSearch" >
+      </div>
+      <app-user
+        *ngFor="let user of filteredByTitleUsers | usersFilterById : idSearch"
+        [user]="user"
+      ></app-user>
+    </div>
+  </div>
+</div>

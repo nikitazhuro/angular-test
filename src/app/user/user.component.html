@@ -1,0 +1,23 @@
+<div class="userBlock">
+  <div class="header">
+    <div class="title">
+      {{ user.id }}
+      {{ user.name }}
+    </div>
+    <button
+      class="companyBtn"
+      (click)="showCompanyInfo = !showCompanyInfo"
+    >
+      {{ showCompanyInfo ? 'Hide company info': 'Show company info' }}
+    </button>
+  </div>
+  <div class="companyInfo" *ngIf="showCompanyInfo">
+    <span>
+      Company:
+    {{ user.company.name }}
+    </span>
+    <span>
+      {{ user.company.catchPhrase }}
+    </span>
+  </div>
+</div>
